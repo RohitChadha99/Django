@@ -1,0 +1,3 @@
+{% for stu in student_list %}
+<h1><a href='{% url 'detail' stu.id %}'>{{stu.name}}</a>&nbsp;<br></h1>
+{% endfor %}

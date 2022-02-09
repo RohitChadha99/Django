@@ -1,0 +1,18 @@
+{% extends 'orm/index.html' %}
+{% block body %}
+
+      
+
+<div class="card text-dark bg-light mb-3 m-5 " style="max-width: 25rem;">
+    <div class="card-header"><h2>Skills</h2></div>
+    <div class="card-body">
+<ul>
+    {% if not s%}
+<h2>No skill to display</h2>
+{% endif %}
+    {% for i in s %}
+    <li><h3 class="card-title">{{i.skill_name}}</h3></li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock body %}

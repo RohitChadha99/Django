@@ -1,0 +1,10 @@
+{% extends 'home/index.html' %}
+{% block body %}
+<div class="container-xxl bg-secondary p-5 text-center text-white row g-3 align-items-center">
+<form method='post' enctype="multipart/form-data">
+{% csrf_token %}
+{{form.as_p}}
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</div>
+{% endblock body %}

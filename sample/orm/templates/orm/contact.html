@@ -1,0 +1,15 @@
+{% extends 'orm/index.html' %}
+{% block body %}
+<div class="card text-dark bg-light mb-3 m-5 " style="max-width: 25rem;">
+    <div class="card-header"><h3>Contact No</h3></div>
+    <div class="card-body">
+{% if not list%}
+<h2>No contact to display</h2>
+{% endif %}
+<ul>
+    {% for i in list %}
+    <li><h3>{{i.phone_no}}</h3></li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock body %}

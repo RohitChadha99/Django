@@ -1,0 +1,10 @@
+{% extends 'orm/index.html' %}
+{% block body %}
+<div class="card text-dark bg-light mb-3 m-5 " style="max-width: 25rem;">
+    <div class="card-header"><h3>Roll No</h3></div>
+    <div class="card-body">
+{% for i in r %}
+    <h1>{{i.roll}}</h1>
+{% endfor %}
+</div>
+{% endblock body %}
